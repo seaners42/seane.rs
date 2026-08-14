@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./style.css">
+  <meta name="seaners" content="width=device-width, initial-scale=1.0">
+  <title>seaners</title>
+
+  <link rel="icon" type="image/png" href="assets/favicons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicons/favicon.svg" />
+  <link rel="shortcut icon" href="assets/favicons/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="seaners" />
+  <link rel="manifest" href="assets/favicons/site.webmanifest" />
+  <script type="text/javascript" src="script.js" defer></script>
+
+</head>
+
+<body>
+
+  <!-- Dark Mode Button -->
+
+  <div class="corner_area">
+    <button class="corner_button" id="theme_switcher">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3" alt="light mode">
+        <path
+          d="M480-28 346-160H160v-186L28-480l132-134v-186h186l134-132 134 132h186v186l132 134-132 134v186H614L480-28Zm141.5-310.5Q680-397 680-480t-58.5-141.5Q563-680 480-680t-141.5 58.5Q280-563 280-480t58.5 141.5Q397-280 480-280t141.5-58.5ZM480-480Zm0 340 100-100h140v-140l100-100-100-100v-140H580L480-820 380-720H240v140L140-480l100 100v140h140l100 100Zm0-340Z" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3" alt="dark mode">
+        <path
+          d="M600-640 480-760l120-120 120 120-120 120Zm200 120-80-80 80-80 80 80-80 80ZM483-80q-84 0-157.5-32t-128-86.5Q143-253 111-326.5T79-484q0-146 93-257.5T409-880q-18 99 11 193.5T520-521q71 71 165.5 100T879-410q-26 144-138 237T483-80Z" />
+      </svg>
+    </button>
+
+    <button class="corner_button" id="mute_toggle">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3" alt="muted">
+        <path
+          d="M640-440v-80h160v80H640Zm48 280-128-96 48-64 128 96-48 64Zm-80-480-48-64 128-96 48 64-128 96ZM120-360v-240h160l200-200v640L280-360H120Z" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3" alt="unmuted">
+        <path
+          d="m616-320-56-56 104-104-104-104 56-56 104 104 104-104 56 56-104 104 104 104-56 56-104-104-104 104Zm-496-40v-240h160l200-200v640L280-360H120Z" />
+      </svg>
+    </button>
+  </div>
+  <!-- Landing Page Main -->
+
+  <div class="backroundbox1"></div>
+  <div class="backroundbox2"></div>
+
+  <div class="landing_page_container">
+
+    <p class="landing_page_element">hello, i am</p>
+    <img class="landing_page_element" id="title" src="assets/seaners.png"
+      style="color: var(--accent);;   font-size: 5em;" alt="seaners"></img>
+    <p class="landing_page_element">developer and artist</p>
+
+    <div style="user-select: none;">
+      <button class="landing_page_button" onclick="showSpan('about_me_span')">
+        about me
+      </button>
+
+      <button class="landing_page_button" onclick="showSpan('work_span')">
+        my work
+      </button>
+
+      <button class="landing_page_button" onclick="showSpan('find_me_span')">
+        socials & contact
+      </button>
+    </div>
+
+  </div>
+
+
+  <div class="puncharooney_cartridge">
+    <button id="puncharooney" onclick="showSpan('puncharooney_span')">
+      <img style="height: clamp(75px, 20vh, 200px);" src="assets/rooney-cart.gif"></img>
+      <br>
+      Play A Game!
+      </button">
+
+  </div>
+
+  <!-- About Me Popup -->
+
+  <span id="about_me_span" class="about_me" style="display: none;">
+    <div class="about_me_info1">
+      <h2>Sean David</h2>
+      <p>
+        Developer and online creative
+      </p>
+    </div>
+    <div class="about_me_info2">
+      Hello, I am <b style="color: var(--accent)">Sean</b>, and I can do these things:<br>
+
+      <ul>
+        <li>Game development</li>
+        <li>3D animation</li>
+        <li>Fun videos</li>
+      </ul>
+
+      Interested in my work? Shoot an email to <a href="mailto:hi@seane.rs">
+        hi@seane.rs</a>!
+
+      <hr>
+
+      <br>
+
+      <h3>EDUCATION</h3>
+
+      <blockquote>
+        High School<br>
+        <sub>I'm in my senior year right now!</sub>
+      </blockquote>
+
+      <br>
+
+      <h3>OTHER STUFF I LIKE</h3>
+      <ul>
+        <li>Anything music! Drums, guitar, etc.</li>
+        <li>Retro console collecting</li>
+        <li>Escape rooms and ARGs</li>
+        <li>Volleyball</li>
+        <li>Half-Life</li>
+        <li>Alien-themed stuff (cute or horror, your choice)</li>
+      </ul>
+
+    </div>
+
+    <button class="quit_button" onclick="hideSpan('about_me_span')"></button>
+
+  </span>
+
+  <!-- My Work Popup -->
+  <span id="work_span" class="work" style="display: none;">
+
+    <div class="work_info">
+      <h2>🦗🦗🦗</h2>
+    </div>
+
+    <button class="quit_button" onclick="hideSpan('work_span')"></button>
+  </span>
+
+  <!-- Find Me Popup -->
+  <span id="find_me_span" class="find_me" style="display: none;">
+
+    <div class="find_me_info">
+      <h2>🦗🦗🦗</h2>
+    </div>
+
+    <button class="quit_button" onclick="hideSpan('find_me_span')"></button>
+  </span>
+
+  <!-- Punch A Rooney -->
+  <span id="puncharooney_span" class="puncharooney" style="display: none;">
+
+    <div class="puncharooney_info">
+
+      <div class="emulator_body">
+        <img style="width: clamp(300px, 50vw, 600px);" src="assets/puncharooney-logo.PNG"
+          style="color: var(--accent);   font-size: 5em;" alt="PUNCH-A-ROONEY"></img>
+        <div id="game"></div>
+      </div>
+      <script>
+        EJS_player = "#game";
+        EJS_core = "melonds";
+        EJS_gameName = "Punch-A-Rooney";
+        EJS_color = "#892222";
+        EJS_pathtodata = 'emulator/data';
+        EJS_gameUrl = "emulator/Punch-A-Rooney.nds";
+      </script>
+      <script src="emulator/data/loader.js"></script>
+
+    </div>
+
+    <div class="puncharooney_info2">
+      An aftermarket boxing game made for the Nintendo DS <br>
+      <br>
+      Play as <b>Rooney "Punchstache" Bafutto</b>, a 22-year-old Italian boxer who quits his job as a plumber. Fight
+      against
+      five fighters, become champion, then defend your title!
+
+      <h2> Keyboard Controls: </h2>
+
+      Arrow Keys: Directional Pad<br>
+      Mouse: Touch Screen<br>
+
+      Q/E: L/R<br>
+      Z: A<br>
+      X: B<br>
+      A: X<br>
+      S: Y<br>
+
+      Enter: Start<br>
+      V: Select<br>
+
+      <br>
+
+      <iframe frameborder="0" src="https://itch.io/embed/4858285" width="552" height="167"><a
+          href="https://seaners42.itch.io/punch-a-rooney">PUNCH-A-ROONEY! by seaners42</a></iframe>
+      <br>
+
+    </div>
+
+    <p style="margin-top: 10px; margin-bottom: 0px; font-family: 'JetBrains Mono', monospace;">
+      Note: Closing Window WONT Stop Game
+    </p>
+    <button class="quit_button" onclick="hideSpan('puncharooney_span')"></button>
+
+  </span>
+
+
+  <footer>© 2026 Sean David</footer>
+</body>
+
+
+</html>
