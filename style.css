@@ -697,8 +697,10 @@ button img {
 
 .emulator_body {
 
+  margin-left: 21.5%;
+
   width: 50%;
-  height: 85%;
+  height: 100%;
 
   background-color: #852a2a;
 
@@ -710,9 +712,8 @@ button img {
   text-align: center;
 
   line-height: 35px;
-  padding: 35px;
+  padding: 10px;
 
-  margin-left: 21.5%;
 
   display: flex;
   flex-direction: column;
