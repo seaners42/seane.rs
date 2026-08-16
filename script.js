@@ -77,3 +77,7 @@ mute_toggle.addEventListener("click", () => {
     muted = localStorage.getItem('muted')
     muted !== "active" ? mute() : unmute()
 })
+
+function open_a_tab(url) {
+    window.open(url, '_blank').focus();
+}

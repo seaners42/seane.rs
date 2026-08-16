@@ -54,7 +54,7 @@
     <p class="landing_page_element">hello, i am</p>
     <img class="landing_page_element" id="title" src="assets/seaners.png"
       style="color: var(--accent);;   font-size: 5em;" alt="seaners"></img>
-    <p class="landing_page_element">developer and artist</p>
+    <p class="landing_page_element">developer • computer artist</p>
 
     <div style="user-select: none;">
       <button class="landing_page_button" onclick="showSpan('about_me_span')">
@@ -88,15 +88,16 @@
     <div class="about_me_info1">
       <h2>Sean David</h2>
       <p>
-        Developer and Online Creative
+        Semi-prolific online creator
       </p>
     </div>
     <div class="about_me_info2">
-      Hello, I am <b style="color: var(--accent)">Sean</b>, and I can do these things:<br>
+      Hello, I am <b style="color: var(--accent)">Sean</b>, and I'm usually known for...<br>
 
       <ul>
-        <li>Game development</li>
+        <li>Indie game development</li>
         <li>3D animation</li>
+        <li>Music production</li>
         <li>Fun videos</li>
       </ul>
 
@@ -116,7 +117,7 @@
 
       <br>
 
-      <h3>OTHER STUFF I LIKE</h3>
+      <h3>INTERESTS</h3>
       <ul>
         <li>Anything music! Drums, guitar, etc.</li>
         <li>Retro console collecting</li>
@@ -136,8 +137,73 @@
   <span id="work_span" class="work" style="display: none;">
 
     <div class="work_info">
-      <img src="assets/jackhanmer-construction-worker.gif" style="width: 65%;" alt="WIP lol">
-      <p>Come back later fam</p>
+      <h2>GAMES</h2>
+      <div class="work_item">
+        <img src="assets/wanted-cover.png">
+        <div style="padding: 1em">
+          <h3>Wanted!</h3>
+          <div style="display:flex; gap: 5px;">
+            <span style="background-color: #478cbf; padding: 0em 0.5em 0em 0.5em; border-radius: 10px;">
+              Godot
+            </span>
+          </div>
+          <p>
+            Fun puzzle game where you pick out a face in a crowd of other faces!
+            <br>
+            <br>
+            Based on the Nintendo DS game as a way to familiarize myself with GDScript.
+          </p>
+          <div style="display:flex; gap: 5px;">
+
+            <a href="https://prezelconsumer.itch.io/wanted" target="_blank"
+              style="background-color: #FA5C5C;  border-radius: 10px; font-size-adjust: 0.5; padding: 0.2em 1em 0.2em 1em;">
+              Visit on itch.io
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="work_item">
+        <img src="assets/puncharooney-cover.png">
+        <div style="padding: 1em">
+          <h3>PUNCH-A-ROONEY!</h3>
+          <div style="display:flex; gap: 5px;">
+            <span style="background-color: #F34B7D; padding: 0em 0.5em 0em 0.5em; border-radius: 10px;">
+              C++
+            </span>
+            <span style="background-color: #555555; padding: 0em 0.5em 0em 0.5em; border-radius: 10px;">
+              C
+            </span>
+          </div>
+          <p>
+            An aftermarket boxing game made for the Nintendo DS
+            <br>
+            <br>
+            This was a super fun project, everything from programming to animation was very fun.
+            thanks to everyone involved with BlocksDS!
+          </p>
+          <div style="display:flex; gap: 5px;">
+            <a href="https://seaners42.itch.io/punch-a-rooney" target="_blank"
+              style="background-color: #FA5C5C;  border-radius: 10px; font-size-adjust: 0.5; padding: 0.2em 1em 0.2em 1em;">
+              Visit on itch.io
+            </a>
+            <a href="https://db.universal-team.net/ds/punch-a-rooney" target="_blank"
+              style="background-color: #1D8056;  border-radius: 10px; font-size-adjust: 0.5; padding: 0.2em 1em 0.2em 1em;">
+              Visit Universal-DB
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <hr width="90%">
+
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <h2 style="margin-bottom: -0.5em;">OTHER WORK</h2>
+        <p>Here's my github, I store my code here sometimes.</p>
+        <a href="https://github.com/seaners42" target="_blank"
+          style="background-color: black; color: white; padding: 0.2em 1em 0.2em 1em; border-radius: 10px; font-family: jua; font-size-adjust: 0.75;">
+          @seaners42
+        </a>
+      </div>
     </div>
 
     <button class="quit_button" onclick="hideSpan('work_span')"></button>
@@ -147,8 +213,35 @@
   <span id="find_me_span" class="find_me" style="display: none;">
 
     <div class="find_me_info">
-      <img src="assets/jackhanmer-construction-worker.gif" style="width: 65%;" alt="WIP lol">
-      <p>Come back later fam</p>
+      <p>You can email me at: <a href="mailto: hi@seane.rs">hi@seane.rs</a> </p>
+      <hr>
+      <br>
+      <div>
+        <button style="color:var(--text-color)" id="links" href="https://www.youtube.com/" target="_blank"
+          onclick="open_a_tab('https://seane.rs/');">
+          <img src="assets/youtube.svg" alt="">
+          <img src="assets/youtube-dark.svg" alt="">
+        </button>
+
+        <button style="color:var(--text-color)" id="links" href="https://www.youtube.com/" target="_blank"
+          onclick="open_a_tab('https://seane.rs/');">
+          <img src="assets/itch.svg" alt="">
+          <img src="assets/itch-dark.svg" alt="">
+        </button>
+
+        <button style="color:var(--text-color)" id="links" href="https://www.youtube.com/" target="_blank"
+          onclick="open_a_tab('https://seane.rs/');">
+          <img src="assets/github.svg" alt="">
+          <img src="assets/github-dark.svg" alt="">
+        </button>
+
+        <button style="color:var(--text-color)" id="links" href="https://www.youtube.com/" target="_blank"
+          onclick="open_a_tab('https://seane.rs/');">
+          <img src="assets/kofi.svg" alt="">
+          <img src="assets/kofi-dark.svg" alt="">
+        </button>
+
+      </div>
     </div>
 
     <button class="quit_button" onclick="hideSpan('find_me_span')"></button>
@@ -217,7 +310,7 @@
   <footer>
     <div id="copyright">© 2026 Sean David</div>
     <div id="masterrepo">
-      <a href="https://github.com/seaners42/seane.rs">
+      <a href="https://github.com/seaners42/seane.rs" target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
             <circle cx="4.5" cy="3.5" r="1.75" />

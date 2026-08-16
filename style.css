@@ -52,6 +52,12 @@ a {
 
 a:hover {
   color: var(--hyperlink-hover);
+  transform: scale(115%, 115%);
+}
+
+a:active {
+  color: var(--hyperlink-hover);
+  transform: scale(85%, 85%);
 }
 
 body {
@@ -82,7 +88,7 @@ button:hover {
 }
 
 button:active {
-  transform: scale(75%, 75%);
+  transform: scale(85%, 85%);
 }
 
 button img {
@@ -417,11 +423,11 @@ button img {
 
   background: var(--background-color);
 
-  margin-left: -250px;
-  margin-top: -300px;
+  margin-left: -500px;
+  margin-top: -450px;
 
-  width: 500px;
-  height: 600px;
+  width: 1000px;
+  height: 900px;
 
   background-color: var(--box-2-color);
 
@@ -438,8 +444,8 @@ button img {
   user-select: none;
 }
 
-@media (max-width: 500),
-(max-height: 600) {
+@media (max-width: 1000px),
+(max-height: 900px) {
   .work {
     animation:
       span_transition 0.75s cubic-bezier(0.19, 1, 0.22, 1) forwards;
@@ -450,10 +456,10 @@ button img {
     background: var(--background-color);
 
     margin-left: -47.5vw;
-    margin-top: -10vh;
+    margin-top: -40vh;
 
     width: 95vw;
-    height: 20vh;
+    height: 80vh;
 
     background-color: var(--box-2-color);
 
@@ -473,22 +479,74 @@ button img {
 .work_info {
   background: var(--background-color2);
 
+  box-sizing: border-box;
+
   width: 100%;
   height: 95%;
 
   font-family: "JetBrains Mono", monospace;
-  font-size-adjust: 0.75;
   color: var(--text-color);
 
-  text-align: center;
+  line-height: 2em;
+  padding: 50px;
 
-  line-height: 35px;
-  padding: 35px;
+  display: flex;
+  flex-direction: column;
 
-  display: inline-block;
   overflow: auto;
 
 }
+
+.work_item {
+  display: flex;
+  flex-direction: row;
+
+  margin: 0px;
+  padding: 0px;
+
+}
+
+@media (max-width: 1000px),
+(max-height: 900px) {
+  .work_item {
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem;
+
+
+    border-top: 2px solid;
+    border-radius: 10px;
+
+  }
+}
+
+
+.work_item img {
+  border-radius: 10px;
+  border: 2px solid;
+
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.work_item img:hover {
+  transform: scale(105%, 105%);
+}
+
+.work_item a {
+  color: white;
+  font-family: jua;
+}
+
+.work_item span {
+  font-family: jua;
+  font-size-adjust: 0.5;
+  color: white;
+}
+
+
 
 .find_me {
   animation:
@@ -500,10 +558,10 @@ button img {
   background: var(--background-color);
 
   margin-left: -250px;
-  margin-top: -300px;
+  margin-top: -12em;
 
   width: 500px;
-  height: 600px;
+  height: 24em;
 
   background-color: var(--box-2-color);
 
@@ -520,8 +578,8 @@ button img {
   user-select: none;
 }
 
-@media (max-width: 500),
-(max-height: 200) {
+@media (max-width: 500px),
+(max-height: 300px) {
   .find_me {
     animation:
       span_transition 0.75s cubic-bezier(0.19, 1, 0.22, 1) forwards;
@@ -532,10 +590,10 @@ button img {
     background: var(--background-color);
 
     margin-left: -47.5vw;
-    margin-top: -10vh;
+    margin-top: -25vh;
 
     width: 95vw;
-    height: 20vh;
+    height: 50vh;
 
     background-color: var(--box-2-color);
 
@@ -619,7 +677,7 @@ button img {
     margin-top: -45vh;
 
     width: 95vw;
-    height: 90vh;
+    height: 85vh;
 
     background-color: var(--box-2-color);
 
@@ -787,6 +845,29 @@ button img {
 
 .muted #mute_toggle svg:last-child {
   display: block;
+}
+
+
+#links img:last-child {
+  display: none;
+}
+
+.darkmode #links img:first-child {
+  display: none;
+}
+
+.darkmode #links img:last-child {
+  display: block;
+}
+
+#links img {
+  height: 5em;
+  width: 5em;
+}
+
+#links {
+  background-color: var(--background-color);
+  border-radius: 5px;
 }
 
 
