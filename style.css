@@ -387,13 +387,24 @@ button img {
 
 .about_me_info1 h2 {
   margin: 0em;
+  font-size: min(2em, 75px);
+
 }
 
 .about_me_info1 p {
   margin: 0em;
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.75em;
+  font-size: min(0.8em, 25px);
+
 }
+
+.about_me_info1 sub {
+  margin: 0em;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: min(0.8em, 25px);
+
+}
+
 
 .about_me_info2 {
   background: var(--background-color2);
@@ -546,6 +557,27 @@ button img {
   color: white;
 }
 
+.skills {
+  font-family: jua;
+  color: white;
+  font-size-adjust: 0.5;
+
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
+
+  gap: 1.25em;
+}
+
+.skills spanL:hover {
+  transform: scale(105%, 105%);
+}
+
+
+
 
 
 .find_me {
@@ -641,10 +673,10 @@ button img {
   background: var(--background-color);
 
   margin-left: -500px;
-  margin-top: -45vh;
+  margin-top: -42.5vh;
 
   width: 1000px;
-  height: 90vh;
+  height: 85vh;
 
   background-color: var(--box-2-color);
 
@@ -674,10 +706,10 @@ button img {
     background: var(--background-color);
 
     margin-left: -47.5vw;
-    margin-top: -45vh;
+    margin-top: -40vh;
 
     width: 95vw;
-    height: 85vh;
+    height: 80vh;
 
     background-color: var(--box-2-color);
 
@@ -712,7 +744,7 @@ button img {
   text-align: center;
 
   line-height: 35px;
-  padding: 10px;
+  padding: 5px;
 
 
   display: flex;
@@ -882,7 +914,7 @@ footer {
 
   width: 100vw;
 
-  padding: 1rem;
+  padding: 0rem 1rem 1rem 1rem;
   user-select: none;
 
   display: flex;
