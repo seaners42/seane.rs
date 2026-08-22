@@ -387,21 +387,21 @@ button img {
 
 .about_me_info1 h2 {
   margin: 0em;
-  font-size: min(2em, 75px);
+  font-size: min(2em, 60px);
 
 }
 
 .about_me_info1 p {
   margin: 0em;
   font-family: 'JetBrains Mono', monospace;
-  font-size: min(0.8em, 25px);
+  font-size: min(0.8em, 20px);
 
 }
 
 .about_me_info1 sub {
   margin: 0em;
   font-family: 'JetBrains Mono', monospace;
-  font-size: min(0.8em, 25px);
+  font-size: min(0.8em, 20px);
 
 }
 
@@ -572,8 +572,8 @@ button img {
   gap: 1.25em;
 }
 
-.skills spanL:hover {
-  transform: scale(105%, 105%);
+.skills span:hover {
+  transform: scale(110%, 110%);
 }
 
 
