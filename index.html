@@ -63,371 +63,372 @@
       </svg>
     </div>
 
-    <!-- Dark Mode Button -->
+  </div>
 
-    <div class="corner_area">
-      <button class="corner_button" id="theme_switcher">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3" alt="light mode">
-          <path
-            d="M480-28 346-160H160v-186L28-480l132-134v-186h186l134-132 134 132h186v186l132 134-132 134v186H614L480-28Zm141.5-310.5Q680-397 680-480t-58.5-141.5Q563-680 480-680t-141.5 58.5Q280-563 280-480t58.5 141.5Q397-280 480-280t141.5-58.5ZM480-480Zm0 340 100-100h140v-140l100-100-100-100v-140H580L480-820 380-720H240v140L140-480l100 100v140h140l100 100Zm0-340Z" />
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3" alt="dark mode">
-          <path
-            d="M600-640 480-760l120-120 120 120-120 120Zm200 120-80-80 80-80 80 80-80 80ZM483-80q-84 0-157.5-32t-128-86.5Q143-253 111-326.5T79-484q0-146 93-257.5T409-880q-18 99 11 193.5T520-521q71 71 165.5 100T879-410q-26 144-138 237T483-80Z" />
-        </svg>
+  <!-- Dark Mode Button -->
+
+  <div class="corner_area">
+    <button class="corner_button" id="theme_switcher">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3" alt="light mode">
+        <path
+          d="M480-28 346-160H160v-186L28-480l132-134v-186h186l134-132 134 132h186v186l132 134-132 134v186H614L480-28Zm141.5-310.5Q680-397 680-480t-58.5-141.5Q563-680 480-680t-141.5 58.5Q280-563 280-480t58.5 141.5Q397-280 480-280t141.5-58.5ZM480-480Zm0 340 100-100h140v-140l100-100-100-100v-140H580L480-820 380-720H240v140L140-480l100 100v140h140l100 100Zm0-340Z" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3" alt="dark mode">
+        <path
+          d="M600-640 480-760l120-120 120 120-120 120Zm200 120-80-80 80-80 80 80-80 80ZM483-80q-84 0-157.5-32t-128-86.5Q143-253 111-326.5T79-484q0-146 93-257.5T409-880q-18 99 11 193.5T520-521q71 71 165.5 100T879-410q-26 144-138 237T483-80Z" />
+      </svg>
+    </button>
+  </div>
+  <!-- Landing Page Main -->
+
+  <div class="backroundbox1"></div>
+  <div class="backroundbox2"></div>
+
+  <div class="landing_page_container">
+
+    <p class="landing_page_element">hello, i am</p>
+    <img class="landing_page_element" id="title" src="assets/seaners.png"
+      style="color: var(--accent);;   font-size: 5em;" alt="seaners"></img>
+    <p class="landing_page_element">game developer • computer artist</p>
+
+    <div style="user-select: none;">
+      <button class="landing_page_button" onclick="showSpan('about_me_span')">
+        about me
+      </button>
+
+      <button class="landing_page_button" onclick="showSpan('work_span')">
+        my work
+      </button>
+
+      <button class="landing_page_button" onclick="showSpan('find_me_span')">
+        socials & contact
       </button>
     </div>
-    <!-- Landing Page Main -->
 
-    <div class="backroundbox1"></div>
-    <div class="backroundbox2"></div>
+  </div>
 
-    <div class="landing_page_container">
 
-      <p class="landing_page_element">hello, i am</p>
-      <img class="landing_page_element" id="title" src="assets/seaners.png"
-        style="color: var(--accent);;   font-size: 5em;" alt="seaners"></img>
-      <p class="landing_page_element">game developer • computer artist</p>
+  <div class="puncharooney_cartridge">
+    <button id="puncharooney" onclick="showSpan('puncharooney_span')">
+      <img style="height: clamp(75px, 20vh, 200px);" src="assets/rooney-cart.gif"></img>
+      <br>
+      play a game!
+      </button">
 
-      <div style="user-select: none;">
-        <button class="landing_page_button" onclick="showSpan('about_me_span')">
-          about me
-        </button>
+  </div>
 
-        <button class="landing_page_button" onclick="showSpan('work_span')">
-          my work
-        </button>
+  <!-- About Me Popup -->
 
-        <button class="landing_page_button" onclick="showSpan('find_me_span')">
-          socials & contact
-        </button>
-      </div>
-
+  <span id="about_me_span" class="about_me" style="display: none;">
+    <div class="about_me_info1">
+      <h2>Sean David</h2>
+      <p>
+        Filipino-American | Based in Florida
+      </p>
     </div>
+    <div class="about_me_info2">
+      Hello, I am <b style="color: var(--accent)">Sean</b>, and I'm usually known for indie game development and 2D/3D
+      animation!<br>
+      <br>
 
+      <div style="margin-left: 2%; border: 1px solid var(--box-2-color); padding: 2em; max-width: 75%;">
 
-    <div class="puncharooney_cartridge">
-      <button id="puncharooney" onclick="showSpan('puncharooney_span')">
-        <img style="height: clamp(75px, 20vh, 200px);" src="assets/rooney-cart.gif"></img>
-        <br>
-        play a game!
-        </button">
+        Many (if not all) off my projects focus on being either...
 
-    </div>
-
-    <!-- About Me Popup -->
-
-    <span id="about_me_span" class="about_me" style="display: none;">
-      <div class="about_me_info1">
-        <h2>Sean David</h2>
-        <p>
-          Filipino-American | Based in Florida
-        </p>
-      </div>
-      <div class="about_me_info2">
-        Hello, I am <b style="color: var(--accent)">Sean</b>, and I'm usually known for indie game development and 2D/3D
-        animation!<br>
-        <br>
-
-        <div style="margin-left: 2%; border: 1px solid var(--box-2-color); padding: 2em; max-width: 75%;">
-
-          Many (if not all) off my projects focus on being either...
-
-          <ul>
-            <li>Fun and responsive</li>
-            <li>Visually unique</li>
-            <li>Musically awesome</li>
-            <li>All of the above</li>
-          </ul>
-
-        </div>
-        <br>
-        Interested in my work? Shoot an email to <a href="mailto:hi@seane.rs">
-          hi@seane.rs</a>!
-        <hr>
-
-        <br>
-
-        <h3>EDUCATION</h3>
-
-        <blockquote>
-          High School<br>
-          <sub>I'm in my senior year right now!</sub>
-        </blockquote>
-
-        <br>
-
-        <h3>INTERESTS</h3>
         <ul>
-          <li>Anything music! Drums, guitar, etc.</li>
-          <li>Retro console collecting</li>
-          <li>Escape rooms and ARGs</li>
-          <li>Volleyball</li>
-          <li>Half-Life</li>
-          <li>Alien-themed stuff (cute or horror, your choice)</li>
+          <li>Fun and responsive</li>
+          <li>Visually unique</li>
+          <li>Musically awesome</li>
+          <li>All of the above</li>
         </ul>
 
       </div>
+      <br>
+      Interested in my work? Shoot an email to <a href="mailto:hi@seane.rs">
+        hi@seane.rs</a>!
+      <hr>
 
-      <button class="quit_button" onclick="hideSpan('about_me_span')"></button>
+      <br>
 
-    </span>
+      <h3>EDUCATION</h3>
 
-    <!-- My Work Popup -->
-    <span id="work_span" class="work" style="display: none;">
+      <blockquote>
+        High School<br>
+        <sub>I'm in my senior year right now!</sub>
+      </blockquote>
 
-      <div class="work_info">
-        <center>
-          <h2>GAMES</h2>
-        </center>
+      <br>
 
-        <div class="work_item">
-          <img src="assets/puncharooney-cover.png">
-          <div style="padding: 1em">
-            <h3>PUNCH-A-ROONEY!</h3>
-            <div class="tools">
+      <h3>INTERESTS</h3>
+      <ul>
+        <li>Anything music! Drums, guitar, etc.</li>
+        <li>Retro console collecting</li>
+        <li>Escape rooms and ARGs</li>
+        <li>Volleyball</li>
+        <li>Half-Life</li>
+        <li>Alien-themed stuff (cute or horror, your choice)</li>
+      </ul>
 
-              <span style="background-color: #478cbf; padding: 0em 0.5em 0em 0.5em; border-radius: 10px;">
-                DS
-              </span>
-              <span style="background-color: #F34B7D; padding: 0em 0.5em 0em 0.5em; border-radius: 10px;">
-                C++
-              </span>
-              <span style="background-color: #555555; padding: 0em 0.5em 0em 0.5em; border-radius: 10px;">
-                Low Level
-              </span>
-              <span style="background-color: #555555; padding: 0em 0.5em 0em 0.5em; border-radius: 10px;">
-                Local Multiplayer
-              </span>
-            </div>
-            <p>
-              An aftermarket boxing game made for the Nintendo DS
-              <br>
-              <br>
-              This was a super fun project, everything from programming to animation was very fun.
-              thanks to everyone involved with BlocksDS!
-            </p>
-            <div class="tools">
+    </div>
 
-              <a href="https://seaners42.itch.io/punch-a-rooney" target="_blank"
-                style="background-color: #FA5C5C;  border-radius: 10px; font-size-adjust: 0.5; padding: 0.2em 1em 0.2em 1em;">
-                Visit on itch.io
-              </a>
-              <a href="https://db.universal-team.net/ds/punch-a-rooney" target="_blank"
-                style="background-color: #1D8056;  border-radius: 10px; font-size-adjust: 0.5; padding: 0.2em 1em 0.2em 1em;">
-                Visit Universal-DB
-              </a>
-              <a href="https://github.com/seaners42/Punch-A-Rooney" target="_blank"
-                style="background-color: #000000;  border-radius: 10px; font-size-adjust: 0.5; padding: 0.2em 1em 0.2em 1em;">
-                Source Code
-              </a>
-            </div>
+    <button class="quit_button" onclick="hideSpan('about_me_span')"></button>
+
+  </span>
+
+  <!-- My Work Popup -->
+  <span id="work_span" class="work" style="display: none;">
+
+    <div class="work_info">
+      <center>
+        <h2>GAMES</h2>
+      </center>
+
+      <div class="work_item">
+        <img src="assets/puncharooney-cover.png">
+        <div style="padding: 1em">
+          <h3>PUNCH-A-ROONEY!</h3>
+          <div class="tools">
+
+            <span style="background-color: #478cbf; padding: 0em 0.5em 0em 0.5em; border-radius: 10px;">
+              DS
+            </span>
+            <span style="background-color: #F34B7D; padding: 0em 0.5em 0em 0.5em; border-radius: 10px;">
+              C++
+            </span>
+            <span style="background-color: #555555; padding: 0em 0.5em 0em 0.5em; border-radius: 10px;">
+              Low Level
+            </span>
+            <span style="background-color: #555555; padding: 0em 0.5em 0em 0.5em; border-radius: 10px;">
+              Local Multiplayer
+            </span>
+          </div>
+          <p>
+            An aftermarket boxing game made for the Nintendo DS
+            <br>
+            <br>
+            This was a super fun project, everything from programming to animation was very fun.
+            thanks to everyone involved with BlocksDS!
+          </p>
+          <div class="tools">
+
+            <a href="https://seaners42.itch.io/punch-a-rooney" target="_blank"
+              style="background-color: #FA5C5C;  border-radius: 10px; font-size-adjust: 0.5; padding: 0.2em 1em 0.2em 1em;">
+              Visit on itch.io
+            </a>
+            <a href="https://db.universal-team.net/ds/punch-a-rooney" target="_blank"
+              style="background-color: #1D8056;  border-radius: 10px; font-size-adjust: 0.5; padding: 0.2em 1em 0.2em 1em;">
+              Visit Universal-DB
+            </a>
+            <a href="https://github.com/seaners42/Punch-A-Rooney" target="_blank"
+              style="background-color: #000000;  border-radius: 10px; font-size-adjust: 0.5; padding: 0.2em 1em 0.2em 1em;">
+              Source Code
+            </a>
           </div>
         </div>
+      </div>
 
-        <div class="work_item">
-          <img src="assets/wanted-cover.png">
-          <div style="padding: 1em">
-            <h3>Wanted!</h3>
-            <div class="tools">
-              <span style="background-color: #478cbf; padding: 0em 0.5em 0em 0.5em; border-radius: 10px;">
-                Godot
-              </span>
-              <span style="background-color: #F34B7D; padding: 0em 0.5em 0em 0.5em; border-radius: 10px;">
-                GDScript
-              </span>
-            </div>
-            <p>
-              Fun puzzle game where you pick out a face in a crowd of other faces!
-              <br>
-              <br>
-              Based on the Nintendo DS game as a way to familiarize myself with GDScript.
-            </p>
-            <div class="tools">
+      <div class="work_item">
+        <img src="assets/wanted-cover.png">
+        <div style="padding: 1em">
+          <h3>Wanted!</h3>
+          <div class="tools">
+            <span style="background-color: #478cbf; padding: 0em 0.5em 0em 0.5em; border-radius: 10px;">
+              Godot
+            </span>
+            <span style="background-color: #F34B7D; padding: 0em 0.5em 0em 0.5em; border-radius: 10px;">
+              GDScript
+            </span>
+          </div>
+          <p>
+            Fun puzzle game where you pick out a face in a crowd of other faces!
+            <br>
+            <br>
+            Based on the Nintendo DS game as a way to familiarize myself with GDScript.
+          </p>
+          <div class="tools">
 
 
-              <a href="https://prezelconsumer.itch.io/wanted" target="_blank"
-                style="background-color: #FA5C5C;  border-radius: 10px; font-size-adjust: 0.5; padding: 0.2em 1em 0.2em 1em;">
-                Visit on itch.io
-              </a>
-              <a href="https://github.com/Algrythm/WANTEDGAME" target="_blank"
-                style="background-color: #000000;  border-radius: 10px; font-size-adjust: 0.5; padding: 0.2em 1em 0.2em 1em;">
-                Source Code
-              </a>
-            </div>
+            <a href="https://prezelconsumer.itch.io/wanted" target="_blank"
+              style="background-color: #FA5C5C;  border-radius: 10px; font-size-adjust: 0.5; padding: 0.2em 1em 0.2em 1em;">
+              Visit on itch.io
+            </a>
+            <a href="https://github.com/Algrythm/WANTEDGAME" target="_blank"
+              style="background-color: #000000;  border-radius: 10px; font-size-adjust: 0.5; padding: 0.2em 1em 0.2em 1em;">
+              Source Code
+            </a>
           </div>
         </div>
-
-
-        <hr width="90%">
-
-        <center>
-          <h2 style="margin-bottom: -0.5rem;">SKILLS</h2>
-          <sub>(Programming languages I can reliably use)</sub>
-        </center>
-
-        <div class="skills">
-          <span style="background-color: #2382e6; padding:0.5em 1em 0.5em 1em; border-radius: 10px;">
-            C++
-          </span>
-          <span style="background-color: #2382e6; padding:0.5em 1em 0.5em 1em; border-radius: 10px;">
-            C
-          </span>
-          <span style="background-color: #d19c0a; padding:0.5em 1em 0.5em 1em; border-radius: 10px;">
-            Python
-          </span>
-          <span style="background-color: #e67723; padding:0.5em 1em 0.5em 1em; border-radius: 10px;">
-            JavaScript
-          </span>
-          <span style="background-color: #2c1ca9; padding:0.5em 1em 0.5em 1em; border-radius: 10px;">
-            Lua
-          </span>
-        </div>
-
-        <hr width="90%">
-
-
-        <div style="display: flex; flex-direction: column; align-items: center;">
-          <h2 style="margin-bottom: -0.5em;">OTHER WORK</h2>
-          <p>Here's my github, I store my code here sometimes.</p>
-          <a href="https://github.com/seaners42" target="_blank"
-            style="background-color: black; color: white; padding: 0.2em 1em 0.2em 1em; border-radius: 10px; font-family: jua; font-size-adjust: 0.75;">
-            @seaners42
-          </a>
-        </div>
       </div>
 
-      <button class="quit_button" onclick="hideSpan('work_span')"></button>
-    </span>
 
-    <!-- Find Me Popup -->
-    <span id="find_me_span" class="find_me" style="display: none;">
+      <hr width="90%">
 
-      <div class="find_me_info">
-        <p>You can email me at: <a href="mailto: hi@seane.rs">hi@seane.rs</a> </p>
-        <hr>
-        <br>
-        <div>
-          <button style="color:var(--text-color)" id="links" href="https://www.youtube.com/" target="_blank"
-            onclick="open_a_tab('https://www.youtube.com/@seaners42');">
-            <img src="assets/youtube.svg" alt="">
-            <img src="assets/youtube-dark.svg" alt="">
-          </button>
+      <center>
+        <h2 style="margin-bottom: -0.5rem;">SKILLS</h2>
+        <sub>(Programming languages I can reliably use)</sub>
+      </center>
 
-          <button style="color:var(--text-color)" id="links" href="https://www.youtube.com/" target="_blank"
-            onclick="open_a_tab('https://seaners42.itch.io/');">
-            <img src="assets/itch.svg" alt="">
-            <img src="assets/itch-dark.svg" alt="">
-          </button>
-
-          <button style="color:var(--text-color)" id="links" href="https://www.youtube.com/" target="_blank"
-            onclick="open_a_tab('https://github.com/seaners42');">
-            <img src="assets/github.svg" alt="">
-            <img src="assets/github-dark.svg" alt="">
-          </button>
-
-          <button style="color:var(--text-color)" id="links" href="https://www.youtube.com/" target="_blank"
-            onclick="open_a_tab('https://ko-fi.com/seaners42');">
-            <img src="assets/kofi.svg" alt="">
-            <img src="assets/kofi-dark.svg" alt="">
-          </button>
-
-        </div>
+      <div class="skills">
+        <span style="background-color: #2382e6; padding:0.5em 1em 0.5em 1em; border-radius: 10px;">
+          C++
+        </span>
+        <span style="background-color: #2382e6; padding:0.5em 1em 0.5em 1em; border-radius: 10px;">
+          C
+        </span>
+        <span style="background-color: #d19c0a; padding:0.5em 1em 0.5em 1em; border-radius: 10px;">
+          Python
+        </span>
+        <span style="background-color: #e67723; padding:0.5em 1em 0.5em 1em; border-radius: 10px;">
+          JavaScript
+        </span>
+        <span style="background-color: #2c1ca9; padding:0.5em 1em 0.5em 1em; border-radius: 10px;">
+          Lua
+        </span>
       </div>
 
-      <button class="quit_button" onclick="hideSpan('find_me_span')"></button>
-    </span>
-
-    <!-- Punch A Rooney -->
-    <span id="puncharooney_span" class="puncharooney" style="display: none;">
-
-      <div class="puncharooney_info">
-
-        <div class="emulator_body">
-          <img style="width: clamp(200px, 50vw, 300px);" src="assets/puncharooney-logo.PNG"
-            style="color: var(--accent);   font-size: 5em;" alt="PUNCH-A-ROONEY"></img>
-          <div id="game"></div>
-        </div>
-        <script>
-          EJS_player = "#game";
-          EJS_core = "melonds";
-          EJS_gameName = "Punch-A-Rooney";
-          EJS_color = "#892222";
-          EJS_pathtodata = 'emulator/data';
-          EJS_gameUrl = "emulator/Punch-A-Rooney.nds";
-        </script>
-        <script src="emulator/data/loader.js"></script>
-
-      </div>
-
-      <div class="puncharooney_info2">
-        <h2> An aftermarket boxing game made for the Nintendo DS</h2>
-        <div class="tools">
-          <a href="https://seaners42.itch.io/punch-a-rooney" target="_blank"
-            style="background-color: #FA5C5C; color: white; border-radius: 10px; font-size-adjust: 0.5; padding: 0.2em 1em 0.2em 1em;">
-            Visit on itch.io
-          </a>
-          <a href="https://db.universal-team.net/ds/punch-a-rooney" target="_blank"
-            style="background-color: #1D8056; color: white;  border-radius: 10px; font-size-adjust: 0.5; padding: 0.2em 1em 0.2em 1em;">
-            Visit Universal-DB
-          </a>
-          <a href="https://github.com/seaners42/Punch-A-Rooney" target="_blank"
-            style="background-color: black; color: white;  border-radius: 10px; font-size-adjust: 0.5; padding: 0.2em 1em 0.2em 1em;">
-            Source Code
-          </a>
-        </div>
-        <hr>
-
-        <p>
-          Play as <b>Rooney "Punchstache" Bafutto</b>, a 22-year-old Italian boxer who quits his job as a plumber. Fight
-          against
-          five fighters, become champion, then defend your title!
-        </p>
-
-        <h2> Keyboard Controls: </h2>
-
-        Arrow Keys: Directional Pad<br>
-        Mouse: Touch Screen<br>
-
-        Q/E: L/R<br>
-        Z: A<br>
-        X: B<br>
-        A: X<br>
-        S: Y<br>
-
-        Enter: Start<br>
-        V: Select<br>
+      <hr width="90%">
 
 
-
-      </div>
-
-      <p style="margin-top: 10px; margin-bottom: 0px; font-family: 'JetBrains Mono', monospace;">
-        Note: Closing Window WONT Stop Game
-      </p>
-      <button class="quit_button" onclick="hideSpan('puncharooney_span')"></button>
-    </span>
-
-
-
-    <footer>
-      <div id="copyright">© 2026 Sean David</div>
-      <div id="masterrepo">
-        <a href="https://github.com/seaners42/seane.rs" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
-              <circle cx="4.5" cy="3.5" r="1.75" />
-              <circle cx="11.5" cy="3.5" r="1.75" />
-              <circle cx="4.5" cy="12.5" r="1.75" />
-              <path d="M5.25 8.25c3 0 6 .5 6-2.5m-6.5 4.5v-4.5" />
-            </g>
-          </svg>
-          source code
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <h2 style="margin-bottom: -0.5em;">OTHER WORK</h2>
+        <p>Here's my github, I store my code here sometimes.</p>
+        <a href="https://github.com/seaners42" target="_blank"
+          style="background-color: black; color: white; padding: 0.2em 1em 0.2em 1em; border-radius: 10px; font-family: jua; font-size-adjust: 0.75;">
+          @seaners42
         </a>
       </div>
-    </footer>
+    </div>
 
-  </div>
+    <button class="quit_button" onclick="hideSpan('work_span')"></button>
+  </span>
+
+  <!-- Find Me Popup -->
+  <span id="find_me_span" class="find_me" style="display: none;">
+
+    <div class="find_me_info">
+      <p>You can email me at: <a href="mailto: hi@seane.rs">hi@seane.rs</a> </p>
+      <hr>
+      <br>
+      <div>
+        <button style="color:var(--text-color)" id="links" href="https://www.youtube.com/" target="_blank"
+          onclick="open_a_tab('https://www.youtube.com/@seaners42');">
+          <img src="assets/youtube.svg" alt="">
+          <img src="assets/youtube-dark.svg" alt="">
+        </button>
+
+        <button style="color:var(--text-color)" id="links" href="https://www.youtube.com/" target="_blank"
+          onclick="open_a_tab('https://seaners42.itch.io/');">
+          <img src="assets/itch.svg" alt="">
+          <img src="assets/itch-dark.svg" alt="">
+        </button>
+
+        <button style="color:var(--text-color)" id="links" href="https://www.youtube.com/" target="_blank"
+          onclick="open_a_tab('https://github.com/seaners42');">
+          <img src="assets/github.svg" alt="">
+          <img src="assets/github-dark.svg" alt="">
+        </button>
+
+        <button style="color:var(--text-color)" id="links" href="https://www.youtube.com/" target="_blank"
+          onclick="open_a_tab('https://ko-fi.com/seaners42');">
+          <img src="assets/kofi.svg" alt="">
+          <img src="assets/kofi-dark.svg" alt="">
+        </button>
+
+      </div>
+    </div>
+
+    <button class="quit_button" onclick="hideSpan('find_me_span')"></button>
+  </span>
+
+  <!-- Punch A Rooney -->
+  <span id="puncharooney_span" class="puncharooney" style="display: none;">
+
+    <div class="puncharooney_info">
+
+      <div class="emulator_body">
+        <img style="width: clamp(200px, 50vw, 300px);" src="assets/puncharooney-logo.PNG"
+          style="color: var(--accent);   font-size: 5em;" alt="PUNCH-A-ROONEY"></img>
+        <div id="game"></div>
+      </div>
+      <script>
+        EJS_player = "#game";
+        EJS_core = "melonds";
+        EJS_gameName = "Punch-A-Rooney";
+        EJS_color = "#892222";
+        EJS_pathtodata = 'emulator/data';
+        EJS_gameUrl = "emulator/Punch-A-Rooney.nds";
+      </script>
+      <script src="emulator/data/loader.js"></script>
+
+    </div>
+
+    <div class="puncharooney_info2">
+      <h2> An aftermarket boxing game made for the Nintendo DS</h2>
+      <div class="tools">
+        <a href="https://seaners42.itch.io/punch-a-rooney" target="_blank"
+          style="background-color: #FA5C5C; color: white; border-radius: 10px; font-size-adjust: 0.5; padding: 0.2em 1em 0.2em 1em;">
+          Visit on itch.io
+        </a>
+        <a href="https://db.universal-team.net/ds/punch-a-rooney" target="_blank"
+          style="background-color: #1D8056; color: white;  border-radius: 10px; font-size-adjust: 0.5; padding: 0.2em 1em 0.2em 1em;">
+          Visit Universal-DB
+        </a>
+        <a href="https://github.com/seaners42/Punch-A-Rooney" target="_blank"
+          style="background-color: black; color: white;  border-radius: 10px; font-size-adjust: 0.5; padding: 0.2em 1em 0.2em 1em;">
+          Source Code
+        </a>
+      </div>
+      <hr>
+
+      <p>
+        Play as <b>Rooney "Punchstache" Bafutto</b>, a 22-year-old Italian boxer who quits his job as a plumber. Fight
+        against
+        five fighters, become champion, then defend your title!
+      </p>
+
+      <h2> Keyboard Controls: </h2>
+
+      Arrow Keys: Directional Pad<br>
+      Mouse: Touch Screen<br>
+
+      Q/E: L/R<br>
+      Z: A<br>
+      X: B<br>
+      A: X<br>
+      S: Y<br>
+
+      Enter: Start<br>
+      V: Select<br>
+
+
+
+    </div>
+
+    <p style="margin-top: 10px; margin-bottom: 0px; font-family: 'JetBrains Mono', monospace;">
+      Note: Closing Window WONT Stop Game
+    </p>
+    <button class="quit_button" onclick="hideSpan('puncharooney_span')"></button>
+  </span>
+
+
+
+  <footer>
+    <div id="copyright">© 2026 Sean David</div>
+    <div id="masterrepo">
+      <a href="https://github.com/seaners42/seane.rs" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+            <circle cx="4.5" cy="3.5" r="1.75" />
+            <circle cx="11.5" cy="3.5" r="1.75" />
+            <circle cx="4.5" cy="12.5" r="1.75" />
+            <path d="M5.25 8.25c3 0 6 .5 6-2.5m-6.5 4.5v-4.5" />
+          </g>
+        </svg>
+        source code
+      </a>
+    </div>
+  </footer>
+
 </body>
 
 
