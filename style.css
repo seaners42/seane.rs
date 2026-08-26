@@ -115,6 +115,7 @@ button img {
   display: flex;
   flex-direction: row;
   justify-content: right;
+  margin: 1rem;
 }
 
 .corner_button {
@@ -864,8 +865,8 @@ button img {
 }
 
 #theme_switcher {
-  height: 65px;
-  width: 65px;
+  height: 5em;
+  width: 5em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -873,7 +874,7 @@ button img {
 
 #theme_switcher svg {
   fill: var(--accent);
-  width: 50px;
+  width: 5em;
 }
 
 #theme_switcher svg:last-child {
@@ -889,8 +890,8 @@ button img {
 }
 
 #mute_toggle {
-  height: 65px;
-  width: 65px;
+  height: 5em;
+  width: 5em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -898,7 +899,7 @@ button img {
 
 #mute_toggle svg {
   fill: var(--accent);
-  width: 50px;
+  width: 5em;
 }
 
 #mute_toggle svg:last-child {
