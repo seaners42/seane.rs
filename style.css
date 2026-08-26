@@ -73,7 +73,7 @@ body {
   background-color: var(--background-color);
   transition: 0s;
 
-  overflow: clip;
+  overflow: hidden;
 
   margin: 20px;
 
